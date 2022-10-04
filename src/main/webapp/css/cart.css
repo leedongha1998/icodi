@@ -1,0 +1,151 @@
+@charset "UTF-8";
+* {
+   padding:0;
+   margin:0;
+}
+main {
+   max-width: 1024px;
+   margin:0 auto;
+}
+.title-wrap {
+   margin-top:20px;
+   height:80px;
+   display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.member-info-wrap {
+   border:1px solid black;
+   padding:10px;
+   font-size : 12px;
+}
+.cart-product-header {
+   padding:10px;
+   border:1px solid #d3d3d385;
+   font-size:13px;
+   font-weight: bold;
+   background-color: rgb(26 188 156 / 16%);
+   height:25px;
+   display: flex;
+   align-items: center;
+   margin-top: 40px;
+}
+.member {
+   height:30px;
+   border-bottom: 1px solid lightgray;
+   display: flex;
+    align-items: center;
+    padding-bottom: 5px;
+}
+.mileage {
+   height:30px;
+   display: flex;
+    align-items: center;
+    padding-top: 5px;
+}
+table {
+   width:100%;
+   border-collapse: collapse;
+   font-size:13.5px;
+   color:#252424;
+}
+.cart-product tr {
+   border-bottom: 1px solid #d3d3d385;
+}
+.cart-product th, .total th {
+   height:60px;
+   font-weight: 300;
+   font-family: 'Noto Sans KR', sans-serif;
+   font-size:15px;
+}
+.total th {
+   border-top:1px solid lightgray;
+   border-bottom:1px solid lightgray;
+}
+.cart-product td {
+	font-size:13px;
+	height:110px;
+}
+
+.cart-product tbody td:not(#productInfo) > * {
+   display:flex;
+   justify-content: center;
+   align-items: center;
+}
+.checkbox {
+   width:40px;
+}
+#product-img-wrap{
+   padding:5px;
+   width:100px;
+}
+#productImg img {
+	width:100%;
+	height:100px;
+}
+#productInfo {
+   width:300px;
+   padding-left: 20px;
+}
+#orderProductPrice {
+   text-align: right;
+}
+.delete-wrap {
+   height:80px;
+   display:flex;
+   align-items: center;
+}
+#delBtn {
+   margin-left: 20px;
+   height:50px;
+   width:100px;
+   background-color: white;
+   border:1px solid rgb(22, 160, 133);
+   color:gray;
+   cursor: pointer;
+}
+#delBtn:hover {
+   background-color: rgb(26, 188, 156);
+   border:none;
+   color:black;
+}
+.display {
+   display:flex;
+   justify-content: center;
+}
+.total td {
+   height:100px;
+   border-bottom: 1px solid lightgray;
+   font-size:19px;
+}
+.order-wrap {
+   height:100px;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 20px;
+}
+#order-btn {
+    width: 250px;
+    height: 70px;
+   background-color: rgb(26, 188, 156);
+   border:none;
+   cursor: pointer;
+}
+#order-btn:hover {
+   background-color: white;
+   border:1px solid rgb(22, 160, 133);
+   color:gray;
+}
+
+.strong {
+   font-weight: bold;
+}
+.total-info-wrap {
+   margin-top: 20px;
+}
+#productImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

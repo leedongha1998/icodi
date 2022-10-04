@@ -1,0 +1,475 @@
+@charset "UTF-8";
+/* 회원가입 */
+h2#main-msg {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bolder;
+  color: rgb(22, 160, 133);
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+table#enroll-table th {
+  text-align: left;
+  padding-right: 20px;
+  font-size: 15px;
+}
+table#enroll-table sup {
+  color: lightcoral;
+  padding-left: 4px;
+  margin-top : 10px;
+}
+table#enroll-table input {
+  width: 280px;
+  height: 35px;
+  border: solid 1px lightgray;
+  box-shadow: inset 0px 0.5px 0.5px lightgray;
+  margin: 5px;
+  border-radius: 6px;
+}
+table#enroll-table input:focus {
+  outline-color: #20b2ab77;
+}
+table#enroll-table span {
+  font-size: 13px;
+  padding-left: 4px;
+}
+table#enroll-table select {
+  width: 65px;
+  height: 40px;
+  border: solid 1px lightgray;
+  box-shadow: inset 0px 0.5px 0.5px lightgray;
+  margin: 5px;
+  border-radius: 6px;
+}
+div#submit-container input {
+  background-color: rgb(22, 160, 133);
+  border: unset;
+  color: white;
+  font-size: 16px;
+  font-weight: bolder;
+  width: 150px; 
+  height: 45px;
+  margin: 25px 0 30px;
+  border-radius: 6px;
+}
+div#submit-container input:hover {
+  cursor: pointer;
+  border: 1px solid rgb(22, 160, 133);
+  color: rgb(22, 160, 133);
+  background-color: #fff;
+}
+div#form-container,#submit-container{
+  display: flex;
+  justify-content: center;
+}
+table#enroll-table input#phone2 {
+  width: 60px;
+}
+table#enroll-table input#phone3 {
+  width: 60px;	
+}
+table#enroll-table input#researchButton {
+  width: 120px; 
+  height: 37px; 
+  margin-top: 2px;
+}
+/* 마이페이지 */
+div#myPage-container {
+  width: 100%;
+  background-color: rgba(102, 205, 170, 0.58);
+  height: 250px;
+  margin-bottom: 10px;
+}
+div#myPage-container h2 {
+  text-align: center;
+  color: rgb(51, 51, 51);
+  padding-top: 30px;
+  font-size: 35px;
+}
+div#myPage-container input {
+  float: right;
+  margin-top: 55px;
+  margin-right: 320px;
+}
+img#memberProfileImg{
+  width: 80px;
+  height: 80px;
+  margin-left: 350px;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-bottom: 45px;
+  margin-top: 20px;
+}
+span#memberProfileId{
+  padding-left: 20px;
+  font-size: 28px;
+  font-weight: normal;
+}
+#modal.modal-overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: none;
+  background: rgb(94 94 94 / 50%);
+  /* border: 1px solid rgba(255, 255, 255, 0.18); */
+  z-index: 100;
+}
+#modal .modal-window {
+    background: rgba( 255, 255, 255 );
+    border-radius: 4px;
+    /* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
+    width: 400px;
+    height: 400px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    padding: 10px;   
+}
+#modal .title {
+  padding-top: 10px;
+  padding-left: 10px;
+  display: inline;
+  color: gray;
+    
+}
+#modal .title h4 {
+  display: inline;
+  font-size: 20px;
+  vertical-align: -webkit-baseline-middle;
+}
+#modal .close-area {
+  display: inline;
+  float: right;
+  padding-right: 10px;
+  cursor: pointer;
+  text-shadow: 1px 1px 2px rgb(87, 87, 87);
+  color: grey;
+  font-size: 20px;
+}
+#modal .content {
+  margin-top: 20px;
+  padding: 0px 10px;
+  font-weight: bold;
+  font-size: 14px;
+  color: rgb(180, 180, 180);
+}
+#modal .content td {
+  padding-top: 7px;
+  padding-right: 15px;
+}
+
+input#btn-modal-memberUpdate {
+  padding: 8px 20px;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px rgb(0 0 0 / 13%);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  transition: 0.25s;
+  background-color: rgb(237 237 237);
+  border: 3px solid rgb(26, 188, 156);
+  color: black;
+  letter-spacing: 1px;
+}
+input#btn-modal-memberUpdate:hover {
+    cursor: pointer;
+    background-color: rgb(26, 188, 156);
+    color: #9dc8c8;
+}
+input#btn-modal-passwordUpdate {
+  border : 2px solid rgb(26, 188, 156);
+  border-radius: 4px;
+  background-color: #fff;
+  color: rgb(26, 188, 156);
+  padding: 4px 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+input#btn-save {
+  border : 2px solid rgb(26, 188, 156);
+  border-radius: 4px;
+  background-color: rgb(26, 188, 156);
+  color: #fff;
+  padding: 4px 13px;
+  font-weight: bold;
+  margin-right: 151px;
+  margin-left: 86px;
+  margin-top: 3px;
+  cursor: pointer;
+}
+input#btn-delete {
+  border : 2px solid rgb(26, 188, 156);
+  border-radius: 4px;
+  background-color: #fff;
+  color: rgb(26, 188, 156);
+  padding: 4px 13px;
+  font-weight: bold;
+  cursor: pointer;
+}
+input#researchButton {
+  border : 2px solid rgb(26, 188, 156);
+  border-radius: 4px;
+  background-color: #fff;
+  color: rgb(26, 188, 156);
+  padding: 4px 10px;
+  font-weight: bold;
+  margin-left: 8px;
+  cursor: pointer;
+}
+input#email {
+  height: 25px;
+  width: 200px;
+  border: solid 1px lightgray;
+  box-shadow: inset 0px 0.5px 0.5px lightgray;
+  border-radius: 4px;
+}
+input#email,#phone2,#phone3,#address,#addressEx:focus {
+	outline-color: #20b2ab77;
+}
+select#phone1 {
+  height: 29px;
+  border: solid 1px lightgray;
+  box-shadow: inset 0px 0.5px 0.5px lightgray;
+  border-radius: 4px;
+}
+select#phone1 {
+	outline-color: #20b2ab77;
+}
+input#phone2,#phone3 {
+  height: 25px;
+  border: solid 1px lightgray;
+  box-shadow: inset 0px 0.5px 0.5px lightgray;
+  border-radius: 4px;
+  width: 39px;
+}
+input#address,#addressEx {
+  height: 25px;
+  border: solid 1px lightgray;
+  box-shadow: inset 0px 0.5px 0.5px lightgray;
+  border-radius: 4px;
+}
+span#msgEmail,#msgPhone {
+	font-size: 12px;
+}
+div.content hr{
+	margin-top: 14px;
+    margin-left: 76px;
+	margin-right: 16px;
+	box-shadow: 0 0 2px 0 rgb(0 0 0 / 15%);
+}
+form.myFrm {
+	 display: inline;
+}
+div#myFrm-container {
+	text-align: center;
+	padding-bottom: 14px;
+	border-bottom: 1px solid grey;
+	padding-top: 4px;
+}
+div#my-codi-selected,#my-board-selected {
+	margin: 80px;
+	display: inline;
+	font-size: 14px;
+}
+
+/** 내 코디 확인 */
+section#my-codi-wrapper {
+	margin-top: 30px;
+}
+div#my-codi-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+div.codi-info-container {
+	display: inline;
+	border: 1px solid #c0c0c0;
+	padding: 10px 20px;
+    margin: 15px 25px;
+	border-radius: 4px;
+}
+div.codi-img-container {
+	display: inline;
+}
+div.codi-info-container img {
+	width: 210px;
+}
+div.liked-wrap {
+	font-size: 13px;
+}
+div.liked-wrap {
+	display: flex;
+	justify-content: space-between;
+	margin: 6px 0;
+}
+span#Checkheart {
+	margin-right: 3px;
+}
+span#likeCount {
+	margin-left: 7px;
+}
+/** 비밀번호 변경 */
+body#pwd-body {
+	display: flex;
+	justify-content: center;
+}
+section#enroll-container {
+  margin-top: 30px;
+}
+div#enroll-title {
+  border: 2px solid rgb(22, 160, 133);
+  display: inline;
+  padding: 12px 0 10px 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: rgb(22, 160, 133);
+}
+div#enroll-title h2 {
+  display: inline;
+  margin: 14px;
+  font-size: 17px;
+  color: #fff;
+}
+table#tbl-pwd {
+  border: 2px solid rgb(22, 160, 133);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-top: 11px;
+  padding: 20px 30px;
+}
+th.table-pwd-th {
+  text-align: left;
+  padding-right: 15px;
+  color: rgb(50, 50, 50);
+  font-size: 14px;
+  padding-top: 13px;
+}
+input#btnPasswordUpdate {
+  margin-bottom: 5px;
+  margin-top: 15px;
+  padding: 5px 13px;
+  background-color: rgb(22, 160, 133);
+  color: #fff;
+  font-weight: bold;
+  border: 1px solid rgb(22, 160, 133);
+  border-radius: 3px;
+  cursor: pointer;
+}
+input#btnPasswordUpdate:hover {
+	border: 1px solid rgb(22, 160, 133);
+	background-color: #fff;
+	color: rgb(22, 160, 133);
+	cursor: pointer;
+}
+input#btnPasswordUpdate:active {
+	border: 1px solid rgb(22, 160, 133);
+	background-color: #fff;
+	color: rgb(22, 160, 133);
+	cursor: pointer;
+}
+
+table#tbl-pwd td{
+	text-align: center;
+}
+span#msg1,#msg2,#msg3 {
+  font-size: 12px;
+}
+table#tbl-pwd input[type=password] {
+	margin: 13px 0 0;
+}
+
+
+
+/** 내 게시글 확인 */
+section#my-board-wrapper {
+	width: 1000px;
+    margin: 45px auto;
+    text-align: center;
+} 
+table#tbl-my-board {
+	width: 1000px;
+    margin: 0 auto;
+    border-collapse : collapse;
+} 
+#menuHeader {
+    background-color: #e2e2e2;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+}
+table#tbl-my-board th,
+table#tbl-my-board td {
+	padding: 15px 0;
+    text-align: center;
+}
+#boardTitle a {
+	text-decoration-line: none;
+	color: inherit;
+	float: left;
+    margin-left: 10px;
+}
+#boardTitle img {
+	text-decoration-line: none;
+	color: inherit;
+	float: left;
+    margin-left: 10px;
+}
+#boardTitle{
+	width: 500px;
+}
+div#my-codi-bagebar {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 20px;
+}
+div.non-codi-info-container {
+	margin: 100px auto;
+}
+div#codi-create {
+	margin: 17px auto;
+    display: flex;
+    justify-content: center;
+}
+a.createLink {
+	text-decoration-line: none;
+    margin: 0 5px;
+    position: relative;
+    top: 1px;
+    font-size: 17px;
+    padding-left: 35px;
+    color: #8b8b8bc9;
+    text-shadow: 2px 1px 3px;
+}
+#btn-more {
+    width: 70px;
+    height: 35px;
+    background-color: white;
+    border: 1px solid rgb(26, 188, 156);
+    color: rgb(22, 160, 133);
+    cursor: pointer;
+}
+#btn-more:hover {
+    background-color: rgb(26, 188, 156, 0.5);
+    color: white;
+    border: none;
+}
+#btn-more-container {
+	margin: 20px 0px 35px;
+	text-align: center;
+}
+#my-codi-selected, #my-board-selected{
+	cursor: pointer;
+}
+
+
+
+
+

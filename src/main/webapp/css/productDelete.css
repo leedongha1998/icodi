@@ -1,0 +1,75 @@
+@charset "UTF-8";
+main {
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+table {
+	width: 800px;
+	text-align: center;
+	border: 1px solid #fff;
+	border-spacing: 2px;
+	font-family: 'Cairo', sans-serif;
+	margin: 30px auto;
+}
+
+h2 {
+	text-align: center;
+	color: rgb(22, 160, 133);
+}
+
+table th {
+	background-color: rgb(22, 160, 133);
+	color: #fff;
+	padding: 10px;	
+}
+
+table td {
+	padding: 10px;
+	background-color: #eee;
+}
+
+td>img{
+	width: 60px;
+	height: 60px;
+	object-fit: cover;
+	border: none;
+}
+
+tr:first-child th:first-child {
+  border-top-left-radius: 6px;
+}
+tr:first-child th:last-child {
+  border-top-right-radius: 6px;
+}
+
+tr:last-child td:first-child {
+  border-bottom-left-radius: 6px;
+}
+tr:last-child td:last-child {
+  border-bottom-right-radius: 6px;
+}
+#delBtn {
+	height: 25px;
+    width: 60px;
+    background-color: white;
+    border: 1px solid rgb(26, 188, 156);
+    color: gray;
+    cursor: pointer;
+}
+#delBtn:hover {
+	background-color: rgb(22, 160, 133, 0.5);
+	border:none;
+	color:black;
+}
+[name=categoryName] {
+    height: 25px;
+    width: 100px;
+    outline: none;
+    border: 1px solid gray;
+}

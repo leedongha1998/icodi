@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+main {
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+/*테이블 위쪽 */
+h1{margin : 20px 0 20px 0;}
+
+#space {justify-content: center;
+    display: flex;}
+
+/*통계전체 box*/
+#space{display:flex; justify-content: space-around; margin:50px 0 100px 0;}
+
+/*search입력 box*/
+#search-container{display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 400px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 62px;
+    }
+
+#search-day,#search-codi-cnt form{ margin: 20px 0 20px 0; }
+
+/*arrow*/
+#arrow{    display: flex;
+    align-content: center;
+    align-items: center;}
+#arrow i{font-size: 150px;
+	letter-spacing: 2px;
+	text-align: center;
+	color: #f35626;
+	background-image: -webkit-linear-gradient(180deg, rgb(22, 160, 133), #feab3a);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-animation: hue 3s infinite linear;}
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
+
+
+
+/*result확인 box*/
+#result-container{border:1px solid black; width:300px;
+display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+     border-radius: 54px;
+     }
+#visit-result, #codi-result {line-height: 1.5;}
+#visit-result > span, #codi-result > span {font-size:15px;}
+/*input[type=date]*/
+input[type="date"]{width:200px; height:50px;border-radius: 18px; text-align:center;}
+
+
+.stats-btn{border:none; margin-left : 10px; width:50px; height:50px; background-color :  #A6E2CE; color:white; border-radius: 20px;}
+

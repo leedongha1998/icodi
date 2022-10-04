@@ -1,0 +1,106 @@
+@charset "UTF-8";
+/* 비밀번호 찾기 */
+
+main {
+	max-width: 1024px;
+    margin :0 auto;
+    box-sizing:border-box;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+
+h1{
+    color: rgb(22, 160, 133);
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+
+
+.pwFind{
+
+    width: 500px;
+    border: 0;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+#memberId{
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 10px;
+    width: 95%;
+    height: 30px;
+    border: 2px solid #ccc;
+}
+
+#memberPhone{
+    font-size: 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    padding: 10px;
+    width: 95%;
+    height: 30px;
+    border: 2px solid #ccc;
+}
+
+.pwFindFrm{
+    font-size: 14px;
+}
+
+button.findPwBtn{
+    font-size: 25px;
+    background-color: rgb(22, 160, 133);
+    margin-bottom: 30px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    cursor: pointer;  
+
+}
+
+.newPw{
+	margin-bottom: 30px;
+	font-size: 20px;
+	font-family: 'Montserrat', sans-serif;	
+	font-weight: bold;
+}
+
+
+
+.loginBtn a{
+	text-decoration: none;
+	padding: 15px 25px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     background-color: rgb(22, 160, 133);
+     color: #fff;
+     border-radius: 5px;
+     cursor: pointer;
+     margin-left: 11px;
+}
+
+
+
+input[name=tel] {
+	width: 200px;
+	height: 50px;
+	border: 3px solid black;
+	border-radius: 5px;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+
+
+
+

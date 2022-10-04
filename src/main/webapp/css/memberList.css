@@ -1,0 +1,27 @@
+@CHARSET "UTF-8";
+/*관리자 페이지 : 회원관리 */
+section#memberList-container {text-align:center;}
+section#memberList-container h2 {margin-top: 45px;}
+
+
+section#memberList-container table#tbl-member {width: 80%; font-size: 14px; border:1px solid gray; border-collapse:collapse; margin: 40px auto;}
+
+
+table#tbl-member td {border:1px solid gray; padding:10px; }
+table#tbl-member th {border:1px solid gray; padding:15px; background-color: #e2e2e2;}
+section#memberList-container div#neck-container{padding:0px; height: 50px; background-color:rgba(0, 188, 212, 0.3);}
+section#memberList-container div#search-container {margin:0 auto; padding:18px; background-color: rgb(26 188 156 / 70%); border: 1px solid rgb(26, 188, 156); width: 38%;}
+div#search-container label{font-weight: bold; color:#fff; margin-right: 10px; font-size: 17px;}
+section#memberList-container button {border-radius: 1px; cursor: pointer; border: 1px solid black; background-color: #fff; padding: 5px 16px; margin-left: 10px; font-weight: bold; font-size: 15px; color: rgb(26, 188, 156);}
+section#memberList-container input[type=text] {border-radius: 1px; width: 80px; height: 23px; width: 192px;}
+section#memberList-container input[type=radio] {accent-color: gray; position: relative; top: 2px;}
+section#memberList-container select {height: 29px; border-radius: 1px; width: 80px; margin-right: 5px;}
+section#memberList-container span {font-size: 15px; color: #fff; font-weight: bold; margin: 4px}
+
+/*페이징 : 페이지바 */
+section#memberList-container div#pagebar{margin-top:-10px; margin-bottom: 30px; text-align:center; background-color:#fff; font-size: 15px;}
+section#memberList-container div#pagebar span.cPage{color: rgb(26, 188, 156); margin-right: 5px;}
+section#memberList-container div#pagebar a{margin-right: 5px; text-decoration: none; font-size: 15px;}
+section#memberList-container div#pagebar a:hover {text-decoration: none;}
+section#memberList-container div#pagebar a:link {color: gray;}
+section#memberList-container div#pagebar a:active {color: rgb(26, 188, 156)}

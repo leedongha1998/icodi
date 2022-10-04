@@ -1,0 +1,131 @@
+@charset "UTF-8";
+/*csCenter 공통*/
+main {
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+* {
+	font-family: 'Nanum Gothic', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+a {
+	color:gray;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 1.5;
+}
+ul > h3 {
+	margin:10px 0;
+}
+.csInfo {
+	font-size:13px;
+}
+button, input[type=submit],input[type=button]{	
+	cursor: pointer;
+}
+li,ul {list-style : none;}
+input[type=button], #btn-inquireList{ color : green; background-color : white; border : 1px solid green; margin-bottom : 10px; width : 250px; height : 50px;}
+.main-content-height{height: 1100px;}
+#csCenter{display : flex;}
+#csInfo{background-color : rgb(22, 160, 133); color:white;}
+#buttonContainer{display : flex; flex-direction : column;}
+#csInfo{width:230px; border-radius: 5px; padding:10px;}
+#csCenterRight{
+	display:flex; 
+	flex-direction : column; 
+	width : 700px;
+	margin-left: auto;
+	}
+	
+/*회색공지*/
+.alert{background-color: #EBEBEB;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 25px;
+    line-height: 1.5;
+   }
+.strong {
+	font-size:15px;
+	font-weight: bold;
+}
+td,th{border-top: 1px solid rgb(173, 173, 173); border-bottom: 1px solid rgb(173, 173, 173);}
+td{width:600px; height:50px;}
+th{width:200px; height:50px;}
+#tbl-inquireView,#tbl-inquire,#tbl-alarm{display: flex; justify-content: center;}
+textarea{width:800px;height:300px;}
+
+/*1:1문의 페이지*/
+#tbl-inquire td:last-child{border-bottom: none;}
+input[name=memberId],input[name=title]{width:180px; height:40px;}
+input[name=memberId]:focus,input[name=title]:focus,textarea:focus{outline:3px solid rgb(22, 160, 133);}
+
+
+#inquireDelFrm{display:flex;}
+[name=inquireFrm],[name=inquireAnswerFrm],#inquireDelFrm{display: flex; justify-content: center; align-items: center; flex-direction: column; margin: 40px 0 20px 0;}
+input[type=submit],#btn-answer-enroll{color:white; background-color:#A6E2CE; width:100px; height:40px; border:none; border-radius: 5px; margin-top:10px;}
+input[type=submit]:hover,#btn-answer-enroll:hover {background-color:rgb(22, 160, 133);}
+
+
+input[type=button], #btn-inquireList {
+  background-image:
+    linear-gradient(rgb(22, 160, 133) 0 0),
+    linear-gradient(rgb(22, 160, 133) 0 0);
+  background-repeat: no-repeat;
+  background-size: 50% .08em;
+  background-position:
+    -100% 100%,
+    200% 0;
+  transition: background-size .3s, background-position .3s .3s;
+  
+}
+input[type=button]:hover,#btn-inquireList:hover{
+	color:white;
+  background-size: 50% 100%;
+  background-position:
+    0 100%,
+    100% 0;  
+  transition: background-size .3s .3s, background-position .3s;
+}
+
+li a{text-decoration: none;}
+li a:hover{color : rgb(22, 160, 133); }
+h1 {padding: 20px 0 20px 0;}
+
+/*csCenter홈*/
+#titleContainer{margin-bottom:40px;}
+h2,ul{margin-bottom : 20px;}
+
+/*csCenterView 공지사항 세부정보 보기 페이지*/
+#inquireView-h2{margin-left: 116px;}
+
+/*inquireList*/
+table {
+    margin-left:auto; 
+    margin-right:auto;
+}
+#csTitle  {
+	font-weight: bold;
+}
+#tbl-inquire-list tr td, #tbl-inquireView td:not(.first){border-top:none;} 
+#tbl-inquire-list{
+	display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 250px;
+    }
+#tbl-inquire-list th{
+	background-color: #A6E2CE;
+	color : black;
+	font-size: 16px;
+}
+#tbl-inquire-list td{
+	background-color: white;
+	color : gray;
+	font-size: 13px; 
+}
+
+#inquire-list-h2{margin : 20px 0;}
+#tbl-inquire-list a:hover{color : green;}

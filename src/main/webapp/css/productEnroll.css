@@ -1,0 +1,113 @@
+@charset "UTF-8";
+main {
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+/*테이블 관련*/
+th{
+	width : 110px;
+}
+tr{
+	width : 300px;
+}
+td{
+	width : 150px;
+}
+.td-file{
+	width : 75px;
+}
+table{
+	padding : 10px;
+	margin-bottom: 35px;
+	 border-collapse: separate;
+  	border-spacing: 10px 20px;
+	border: 1px solid black;
+}
+table:not(#option-tbl){
+box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+	}
+
+
+
+.content-wrap {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+
+.header-wrap h2{
+    margin: 15px 0;
+}
+
+article:first-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+article:last-child{
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+}
+select{
+	width: 70px;
+	height: 40px;
+}
+
+section button{
+	width : 80px;
+	height: 50px;
+    color : white;
+    background-color: #A6E2CE;
+	border: none;
+}
+#btn-1{
+	position: relative;
+    left: 330px;
+}
+#btn-2{
+	    position: relative;
+    left: 174px;
+}
+
+section button:hover{
+	background-color: rgb(22, 160, 133); 
+}
+
+input:not([type=radio]) {
+	width: 250px;
+	height: 30px;
+}
+input[type=radio]{
+	width: 80px;
+	height: 30px;
+}
+
+input:focus, textarea:focus,select:focus{
+	outline : 2px solid rgb(22, 160, 133); 
+}
+input[type=radio]:focus{
+	outline: none;
+}
+
+#td-io{
+	display: flex;
+    align-items: center;
+}
+.div-io{
+	width: 124px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

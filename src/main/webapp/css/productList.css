@@ -1,0 +1,104 @@
+@charset "UTF-8";
+main {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.ui-menu-item div{width:150px;}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+div{
+	display: block;
+}
+
+h2 {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.productList{
+	width: 100%; 
+}
+ul{
+	position: relative; 
+	display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+li{
+	width: 20%;
+	margin : 20px 25px;
+	list-style: none;
+	cursor: pointer;
+	
+}
+
+.product img{
+	width: 100%;
+	height: 280px;
+	object-fit: fill;
+	box-sizing: border-box;
+	vertical-align: middle;
+	border: none;
+}
+
+.product-info{
+	text-align: left;
+	margin: 0 auto;
+	padding: 0;
+	font-size: 15px;
+}
+
+a #productName{
+	font-size: 14px;
+	font-weight: bold;
+	margin-top: 9px;
+    margin-bottom: 5px;
+    margin-left: 3px;
+}
+a #productPrice {
+	color: #333;
+	margin-left: 4px;
+    font-size: 13px;
+}
+.product-info {
+	cursor: pointer;
+}
+
+#btn-more-container {
+	text-align: center;
+	margin-bottom: 30px;
+
+}
+#btn-more-container button{
+	border: none;
+	font-family: "paybooc-Light", sans-serif;
+	font-weight: 600;
+	border-radius: 5px;
+	transition: 0.25s;
+	cursor: pointer;
+	position: relative;
+	text-decoration: none;
+    border: 3px solid #a3a1a1;
+    padding: 3px 15px;
+    color: #a3a1a1;
+
+}
+
+#btn-more-container button:hover{
+	letter-spacing: 2px;
+	transform: scale(1.2);
+	cursor: pointer;
+	background-color: #a3a1a1;
+	color: #e3dede;
+}	

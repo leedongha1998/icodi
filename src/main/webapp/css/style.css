@@ -1,0 +1,249 @@
+/* 헤더 */
+* {
+	font-family: 'Nanum Gothic', sans-serif;
+}
+#header {
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    width: 100%;
+    top: 0;
+    background-color: #fff;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+#header #header_wrapper {
+    max-width: 1024px;
+    margin: 0 auto;
+    height: 80px
+}
+#header #header_wrapper{
+	max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	padding: 10px;
+}
+#header #header_wrapper .userMenu {
+   position: relative;
+    width: 480px;
+    bottom: -30px;
+    display: flex;
+    justify-content: flex-end;
+}
+#header #header_wrapper .userMenu a{
+    text-decoration: none;
+    color: #555;
+    float: left;
+    font-size: 13px;
+    padding: 7px 0;
+    margin-left: 15px;
+    padding-right: 5px;
+}
+
+#header .search_wrapper #productAuto{
+	font-size: 14px;
+    padding-left: 10px;
+    border: 0;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .15);
+    background: #fff;
+	width: 315px;
+	height: 49px;
+}
+
+#header .search_wrapper .search-btn{
+   position: relative;
+    left: -4px;
+    width: 39px;
+    height: 48px;
+    border: none;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 15%);
+    margin-left: 6px;
+}
+
+#header .search_wrapper i {
+	font-size: 19px;
+}
+
+.search_wrapper{
+	position: relative;
+    top: 13px;
+    right: -45px;
+}
+
+/* .wrapper_left span {font-size:12.5px;} */
+
+.wrapper_left > span {
+	font-size:12.5px;
+}
+#codiCnt {
+	font-weight: bold;
+}
+.hide_for_mobile {
+    display: flex;
+    align-items: center;
+}
+#ui-id-1{height: 0px; border:none; z-index:999;}
+
+/* 알림 관련 */
+#btn-alarm{
+	position: relative;
+    bottom: -17px;
+}
+
+.bell {
+  transform-origin: top;
+  animation: bell 2s infinite linear;
+}
+
+@keyframes bell{
+  0%, 50%{
+	transform: rotate(0deg);
+	}
+  5%, 15%, 25%, 35%, 45% {
+	transform: rotate(13deg);
+  }
+  10%, 20%, 30%, 40% {
+	transform: rotate(-13deg);
+  }
+}
+
+#btn-alarm{background-color:white; border:none;}
+#header_alert{width:10px;     position: absolute; bottom: 40px; left: 295px;}
+
+
+/* 메인메뉴 */
+#main_menu_container {
+    width: 100%;
+    background-color: #fff
+}
+#main_menu_container #main_menu {
+    display: flex;
+    flex-wrap: wrap;
+        justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1300px
+}
+#main_menu_container .main_menu {
+    text-align: center;
+    text-transform: uppercase;
+    height: 55px
+}
+#main_menu_container .main_menu a {
+    display: block;
+    display: flex;
+    justify-content: center;
+    padding: 20px 1em 0;
+    color: #666;
+    text-decoration: none;
+    white-space: nowrap;
+    font-size: 13px;
+}
+#main_menu_container .main_menu a:hover {
+    color:rgb(22, 160, 133);
+    font-weight: bolder;
+}
+
+
+#header_of_header_wrapper {
+    height: 24px;
+    width: 100%;
+}
+
+#header_of_header_wrapper #header_of_header {
+    max-width: 1024px;
+    margin: 5px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#header_of_header_wrapper #header_of_header a {
+    color: #555;
+    float: left;
+    font-size: 12px;
+    padding: 7px 0;
+    margin-left: 15px;
+    padding-right: 5px;
+    text-decoration: none
+}
+#header_of_header_wrapper #header_of_header a:hover{
+	color : gray;
+}
+/* 회원가입메뉴 */
+
+/*footer 시작*/
+footer{
+	border-top: 1px solid rgba(0,0,0,.12);
+    box-shadow: 0 -6px 7px -8px rgb(0 0 0 / 20%);
+    padding:10px;
+    text-align: center;}
+#footer-div{
+	    display: flex;
+    justify-content: center;
+    }
+#footer-notice{margin-bottom: 20px;}
+#footer-word{width:500px;}
+#footer-word h4 {margin-bottom: 10px;}
+#footer-icon-div{    
+	width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 79px;
+    align-items: center;
+ }
+ #footer-icon-div span{
+ 	margin: 10px 0;
+ }
+ #footer-icon-div p {
+ 	color : gray;
+ }
+	
+ .footerInfo {
+ 	font-size:13px;
+ }
+ #footer-word h3 {
+ 	font-size:14px;
+ 	
+ }
+ #footer-word > *{
+ 	font-size:13px;
+ }
+ /* 에러페이지 */
+ * {
+ 	font-family: 'Nanum Gothic', sans-serif;
+ }
+ .err-msg {
+ 	font-size:14px;
+ 	line-height: 2;
+ }
+#goToMain {
+    height: 40px;
+     width:150px;
+    background-color: white;
+    border: 1px solid rgb(22, 160, 133);
+    cursor: pointer;
+    color:gray;
+}
+#goToMain:hover {
+	background-color: rgb(26, 188, 156, 0.5);
+	border: none;
+	color:black;
+}
+#goToBack {
+    height: 40px;
+    width:150px;
+	background-color: rgb(26, 188, 156, 0.5);
+	border: none;
+	color:black;
+	cursor: pointer;
+}
+#goToBack:hover {
+    background-color: white;
+    border: 1px solid rgb(22, 160, 133);
+    cursor: pointer;
+    color:gray;
+}
+.errStrong {
+	font-size:18px;
+	font-weight: bold;
+}
